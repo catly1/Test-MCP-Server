@@ -91,9 +91,9 @@ The server exposes the following two tools to any connected MCP client.
 
 ### `generate_music`
 
-* **Description**: Reads the `output/generated.mp3` file, encodes it, and returns it.
+* **Description**: Reads the `output/generated.wav` file, encodes it, and returns it.
 * **Input**: None.
 * **Output**: An MCP content object containing the base64 data.
     * `type`: `base64`
-    * `mimeType`: `audio/mpeg`
-    * `data`: `<base64_encoded_string_of_the_mp3>`
+    * `mimeType`: `audio/wav`
+    * `data`: `<base64_encoded_string_of_the_wav>`
