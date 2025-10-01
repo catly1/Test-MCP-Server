@@ -19,7 +19,7 @@ This project is a simple Node.js server that implements the Model Context Protoc
 
 1.  Clone the repository to your local machine:
     ```
-    git clone [https://github.com/catly1/Test-MCP-Server.git](https://github.com/catly1/Test-MCP-Server.git)
+    git clone https://github.com/catly1/Test-MCP-Server.git
     ```
 2.  Navigate into the newly created project directory:
     ```
@@ -85,7 +85,7 @@ The server exposes the following two tools to any connected MCP client.
 * **Description**: Reads the `output/generated.png` file, encodes it, and returns it.
 * **Input**: None.
 * **Output**: An MCP content object containing the base64 data.
-    * `type`: `base64`
+    * `type`: `image`
     * `mimeType`: `image/png`
     * `data`: `<base64_encoded_string_of_the_png>`
 
@@ -94,6 +94,6 @@ The server exposes the following two tools to any connected MCP client.
 * **Description**: Reads the `output/generated.wav` file, encodes it, and returns it.
 * **Input**: None.
 * **Output**: An MCP content object containing the base64 data.
-    * `type`: `base64`
+    * `type`: `audio`
     * `mimeType`: `audio/wav`
     * `data`: `<base64_encoded_string_of_the_wav>`
