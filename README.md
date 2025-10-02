@@ -97,3 +97,12 @@ The server exposes the following two tools to any connected MCP client.
     * `type`: `audio`
     * `mimeType`: `audio/wav`
     * `data`: `<base64_encoded_string_of_the_wav>`
+
+### `generate_multiple_images`
+
+* **Description**: Reads all supported image files (PNG, JPG, GIF) from the `output/` directory, encodes each one, and returns them in a single response.
+* **Input**: None.
+* **Output**: An MCP content object containing an array of image data blocks. The structure for **each** block in the array is as follows:
+    * `type`: `image`
+    * `mimeType`: `image/png`, `image/jpeg`, or `image/gif` (depending on the file)
+    * `data`: `<base64_encoded_string_of_the_image>`
